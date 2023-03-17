@@ -26,6 +26,7 @@ body {
 .box1 h1 {
     font-size: 3vw;
     margin: 0;
+    text-decoration: underline;
 }
 
 .box1 {
@@ -53,14 +54,22 @@ body {
 .box3 {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
-    margin-top: 2vw;
+    gap: 1vw;
 }
 
 .box3 input {
     border: none;
     border-bottom: 1px black solid;
     width: 17vw;
+}
+
+.textoAzul {
+  color: #0099e6;
+  /* text-decoration:  1px underline; */
+}
+
+.textoSubrallado {
+  text-decoration: 1px underline;
 }
 
 
@@ -77,13 +86,13 @@ button {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
-    border: 1px solid rgb(61, 106, 255);
+    border: 1px solid #0099e6;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #072577;
+    color: #0099e6;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
@@ -93,7 +102,7 @@ button {
   }
   
   button:hover {
-    background: rgb(61, 106, 255);
+    background: #0099e6;
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -149,3 +158,57 @@ button {
   }
 
   /* usamos flexbox.help y chat gpt neumorphism.io  supabase vercel*/
+
+/* INPUTS ------------------------------------------------------------------- */
+
+
+  /* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}

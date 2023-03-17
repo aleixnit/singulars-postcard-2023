@@ -12,23 +12,41 @@
   <body>
     <div class="container">
       <div class="box1">
-        <h1>My Postcard</h1>
+        <h1><span class="textoAzul">My </span>Postcard</h1>
         <img src="./4geeks.png" alt="Logo 4 geeks" />
       </div>
 
       <div class="container2">
         <div class="box2">
           <p>
-            Look how awesome! This is a postcard that I created using HTML5 and
-            CSS3 during my 4Geeks Academy Course!
+            Look how <span class="textoAzul">awesome!</span> This is a postcard that I created using <span class="textoAzul textoSubrallado">HTML5</span> and
+            <span class="textoAzul textoSubrallado">CSS3</span> during my <span class="textoAzul textoSubrallado">4Geeks Academy Course!</span>
           </p>
-          <p>This is so cool, can't wait to start doing more stuff!</p>
+          <p>This is so cool, <span class="textoAzul textoSubrallado">can't wait to start doing more stuff!</span></p>
         </div>
 
         <div class="box3">
-          <input placeholder="Some Name" type="text" />
-          <input placeholder="Some Email" type="email" />
-          <input placeholder="Some comment" type="text" />
+
+
+          <div class="input-container">
+            <input placeholder="Some Name" class="input-field" type="text">
+            <label for="input-field" class="input-label">Some Name</label>
+            <span class="input-highlight"></span>
+          </div>
+
+          <div class="input-container">
+            <input placeholder="Some Email" class="input-field" type="email">
+            <label for="input-field" class="input-label">Some Email</label>
+            <span class="input-highlight"></span>
+          </div>
+
+          <div class="input-container">
+            <input placeholder="Some Comment" class="input-field" type="text">
+            <label for="input-field" class="input-label">Some Comment</label>
+            <span class="input-highlight"></span>
+          </div>
+
+      
         </div>
       </div>
 
