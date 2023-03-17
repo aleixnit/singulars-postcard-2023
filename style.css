@@ -59,7 +59,8 @@ body {
 
 .box3 input {
     border: none;
-    border-bottom: 2px black solid; 
+    border-bottom: 1px black solid;
+    width: 17vw;
 }
 
 
@@ -146,3 +147,5 @@ button {
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
+
+  /* usamos flexbox.help y chat gpt neumorphism.io  supabase vercel*/
