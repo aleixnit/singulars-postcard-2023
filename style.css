@@ -157,8 +157,6 @@ button {
     transition: box-shadow 0.2s ease-in;
   }
 
-  /* usamos flexbox.help y chat gpt neumorphism.io  supabase vercel*/
-
 /* INPUTS ------------------------------------------------------------------- */
 
 
@@ -212,3 +210,6 @@ button {
 .input-field:focus + .input-label + .input-highlight {
   width: 100%;
 }
+
+/* ------------------------- RESPONSIVE ------------------------------ */
+
